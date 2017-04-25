@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        style="@style/rootLayout"
+        tools:context="com.example.android.snookerscorekeeper.MainActivity">
+
+        <LinearLayout style="@style/scoreLayout">
+
+            <LinearLayout style="@style/pointsLayout">
+
+                <TextView
+                    android:id="@+id/player_a_name"
+                    style="@style/playerTextView"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/player_a_score"
+                    style="@style/scoreTextView"
+                    android:layout_marginTop="@dimen/basic"
+                    android:text="@string/zero"
+                    android:textSize="@dimen/scoreText" />
+
+                <TextView
+                    android:id="@+id/player_a_frame_score"
+                    style="@style/scoreTextView"
+                    android:text="@string/zeroParentheses"
+                    android:textSize="@dimen/frameText" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/imageView" />
+
+
+            <LinearLayout style="@style/pointsLayout">
+
+                <TextView
+                    android:id="@+id/player_b_name"
+                    style="@style/playerTextView"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/player_b_score"
+                    style="@style/scoreTextView"
+                    android:layout_marginTop="@dimen/basic"
+                    android:text="@string/zero"
+                    android:textSize="@dimen/scoreText" />
+
+                <TextView
+                    android:id="@+id/player_b_frame_score"
+                    style="@style/scoreTextView"
+                    android:text="@string/zeroParentheses"
+                    android:textSize="@dimen/frameText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ballsLayout">
+
+            <LinearLayout style="@style/singleBallsLayout">
+
+                <RelativeLayout
+                    style="@style/relativeLayout"
+                    android:layout_marginTop="@dimen/doubleBasic">
+
+                    <Button
+                        android:id="@+id/redA"
+                        style="@style/ballButton"
+                        android:layout_marginLeft="@dimen/tripleTen"
+                        android:backgroundTint="@color/red"
+                        android:onClick="ballButton"
+                        android:tag="-1" />
+
+                    <Button
+                        android:id="@+id/yellowA"
+                        style="@style/ballButton"
+                        android:layout_marginLeft="@dimen/doubleTen"
+                        android:layout_toRightOf="@id/redA"
+                        android:backgroundTint="@color/yellow"
+                        android:onClick="ballButton"
+                        android:tag="-2" />
+
+                    <Button
+                        android:id="@+id/pinkA"
+                        style="@style/ballButton"
+                        android:layout_below="@id/redA"
+                        android:layout_marginTop="@dimen/doubleBasic"
+                        android:backgroundTint="@color/pink"
+                        android:onClick="ballButton"
+                        android:tag="-6" />
+
+                    <Button
+                        android:id="@+id/blackA"
+                        style="@style/ballButton"
+                        android:layout_below="@id/redA"
+                        android:layout_marginLeft="@dimen/left"
+                        android:layout_marginTop="@dimen/doubleBasic"
+                        android:layout_toRightOf="@id/pinkA"
+                        android:backgroundTint="@android:color/black"
+                        android:onClick="ballButton"
+                        android:tag="-7" />
+
+                    <Button
+                        android:id="@+id/greenA"
+                        style="@style/ballButton"
+                        android:layout_below="@id/redA"
+                        android:layout_marginLeft="@dimen/left"
+                        android:layout_marginTop="@dimen/doubleBasic"
+                        android:layout_toRightOf="@id/blackA"
+                        android:backgroundTint="@color/green"
+                        android:onClick="ballButton"
+                        android:tag="-3" />
+
+                    <Button
+                        android:id="@+id/blueA"
+                        style="@style/ballButton"
+                        android:layout_below="@id/greenA"
+                        android:layout_marginLeft="@dimen/tripleTen"
+                        android:layout_marginTop="@dimen/doubleBasic"
+                        android:backgroundTint="@color/blue"
+                        android:onClick="ballButton"
+                        android:tag="-5" />
+
+                    <Button
+                        android:id="@+id/brownA"
+                        style="@style/ballButton"
+                        android:layout_below="@id/blackA"
+                        android:layout_marginLeft="@dimen/eighty"
+                        android:layout_marginTop="@dimen/doubleBasic"
+                        android:backgroundTint="@color/brown"
+                        android:onClick="ballButton"
+                        android:tag="-4" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/relativeLayout"
+                    android:layout_marginTop="@dimen/quadBasic">
+
+                    <Button
+                        android:id="@+id/foul4A"
+                        style="@style/ballButton"
+                        android:onClick="ballButton"
+                        android:tag="-8"
+                        android:text="@string/foul4"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/foul5A"
+                        style="@style/ballButton"
+                        android:layout_marginLeft="@dimen/foulLeft"
+                        android:layout_toRightOf="@id/foul4A"
+                        android:onClick="ballButton"
+                        android:tag="-9"
+                        android:text="@string/foul5"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/foul6A"
+                        style="@style/ballButton"
+                        android:layout_marginLeft="@dimen/foulLeft"
+                        android:layout_toRightOf="@id/foul5A"
+                        android:onClick="ballButton"
+                        android:tag="-10"
+                        android:text="@string/foul6"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/foul7A"
+                        style="@style/ballButton"
+                        android:layout_marginLeft="@dimen/foulLeft"
+                        android:layout_toRightOf="@id/foul6A"
+                        android:onClick="ballButton"
+                        android:tag="-11"
+                        android:text="@string/foul7"
+                        android:textColor="@android:color/white" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/singleBallsLayout">
+
+                <RelativeLayout
+                    style="@style/relativeLayout"
+                    android:layout_marginTop="@dimen/doubleBasic">
+
+                    <Button
+                        android:id="@+id/redB"
+                        style="@style/ballButton"
+                        android:layout_marginLeft="@dimen/tripleTen"
+                        android:backgroundTint="@color/red"
+                        android:onClick="ballButton"
+                        android:tag="1" />
+
+                    <Button
+                        android:id="@+id/yellowB"
+                        style="@style/ballButton"
+                        android:layout_marginLeft="@dimen/doubleTen"
+                        android:layout_toRightOf="@id/redB"
+                        android:backgroundTint="@color/yellow"
+                        android:onClick="ballButton"
+                        android:tag="2" />
+
+                    <Button
+                        android:id="@+id/pinkB"
+                        style="@style/ballButton"
+                        android:layout_below="@id/redB"
+                        android:layout_marginTop="@dimen/doubleBasic"
+                        android:backgroundTint="@color/pink"
+                        android:onClick="ballButton"
+                        android:tag="6" />
+
+                    <Button
+                        android:id="@+id/blackB"
+                        style="@style/ballButton"
+                        android:layout_below="@id/redB"
+                        android:layout_marginLeft="@dimen/left"
+                        android:layout_marginTop="@dimen/doubleBasic"
+                        android:layout_toRightOf="@id/pinkB"
+                        android:backgroundTint="@android:color/black"
+                        android:onClick="ballButton"
+                        android:tag="7" />
+
+                    <Button
+                        android:id="@+id/greenB"
+                        style="@style/ballButton"
+                        android:layout_below="@id/redB"
+                        android:layout_marginLeft="@dimen/left"
+                        android:layout_marginTop="@dimen/doubleBasic"
+                        android:layout_toRightOf="@id/blackB"
+                        android:backgroundTint="@color/green"
+                        android:onClick="ballButton"
+                        android:tag="3" />
+
+                    <Button
+                        android:id="@+id/blueB"
+                        style="@style/ballButton"
+                        android:layout_below="@id/greenB"
+                        android:layout_marginLeft="@dimen/tripleTen"
+                        android:layout_marginTop="@dimen/doubleBasic"
+                        android:backgroundTint="@color/blue"
+                        android:onClick="ballButton"
+                        android:tag="5" />
+
+                    <Button
+                        android:id="@+id/brownB"
+                        style="@style/ballButton"
+                        android:layout_below="@id/blackB"
+                        android:layout_marginLeft="@dimen/eighty"
+                        android:layout_marginTop="@dimen/doubleBasic"
+                        android:backgroundTint="@color/brown"
+                        android:onClick="ballButton"
+                        android:tag="4" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/relativeLayout"
+                    android:layout_marginTop="@dimen/quadBasic">
+
+                    <Button
+                        android:id="@+id/foul4B"
+                        style="@style/ballButton"
+                        android:onClick="ballButton"
+                        android:tag="8"
+                        android:text="@string/foul4"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/foul5B"
+                        style="@style/ballButton"
+                        android:layout_marginLeft="@dimen/foulLeft"
+                        android:layout_toRightOf="@id/foul4B"
+                        android:onClick="ballButton"
+                        android:tag="9"
+                        android:text="@string/foul5"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/foul6B"
+                        style="@style/ballButton"
+                        android:layout_marginLeft="@dimen/foulLeft"
+                        android:layout_toRightOf="@id/foul5B"
+                        android:onClick="ballButton"
+                        android:tag="10"
+                        android:text="@string/foul6"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/foul7B"
+                        style="@style/ballButton"
+                        android:layout_marginLeft="@dimen/foulLeft"
+                        android:layout_toRightOf="@id/foul6B"
+                        android:onClick="ballButton"
+                        android:tag="11"
+                        android:text="@string/foul7"
+                        android:textColor="@android:color/white" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/buttonsLayout">
+
+            <Button
+                style="@style/buttons"
+                android:onClick="newFrame"
+                android:text="@string/newFrame" />
+
+
+            <Button
+                style="@style/buttons"
+                android:layout_marginLeft="@dimen/button"
+                android:layout_marginRight="@dimen/button"
+                android:onClick="undo"
+                android:text="@string/undo" />
+
+            <Button
+                style="@style/buttons"
+                android:onClick="newGame"
+                android:text="@string/newGame" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/welcomeScreen"
+        style="@style/welcomeLayout">
+
+        <TextView style="@style/welcomeTextView" />
+
+        <EditText
+            android:id="@+id/editTextA"
+            style="@style/editText"
+            android:hint="@string/editTextA" />
+
+        <EditText
+            android:id="@+id/editTextB"
+            style="@style/editText"
+            android:hint="@string/editTextB" />
+
+        <Button
+            style="@style/startGame"
+            android:onClick="startGame"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

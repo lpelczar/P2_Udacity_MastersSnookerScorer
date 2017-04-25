@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">\n\nMasters Snooker Scorer</string>
+    <string name="newFrame">New Frame</string>
+    <string name="undo">Undo</string>
+    <string name="newGame">New Game</string>
+    <string name="zero">0</string>
+    <string name="zeroParentheses">(0)</string>
+    <string name="balls">Red Balls</string>
+    <string name="foul4">-4</string>
+    <string name="foul5">-5</string>
+    <string name="foul6">-6</string>
+    <string name="foul7">-7</string>
+    <string name="welcomeText">Welcome to Masters Snooker Scorer App!</string>
+    <string name="editTextA">Type name of player A</string>
+    <string name="editTextB">Type name of player B</string>
+    <string name="startGame">Start Game</string>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="basic">8dp</dimen>
+    <dimen name="doubleBasic">16dp</dimen>
+    <dimen name="tripleBasic">24dp</dimen>
+    <dimen name="quadBasic">32dp</dimen>
+    <dimen name="scoreText">56sp</dimen>
+    <dimen name="frameText">24sp</dimen>
+    <dimen name="nameText">16sp</dimen>
+    <dimen name="tripleTen">30dp</dimen>
+    <dimen name="doubleTen">20dp</dimen>
+    <dimen name="left">25dp</dimen>
+    <dimen name="eighty">80dp</dimen>
+    <dimen name="foulLeft">7dp</dimen>
+    <dimen name="button">2dp</dimen>
+</resources>
