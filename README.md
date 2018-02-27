@@ -4,4 +4,4 @@ Project 2: Court Counter App - Implement an app to track scores between two team
 
 ## Screenshots
 
-![scorer](https://imgur.com/4KIqZmi)
+![scorer](http://i67.tinypic.com/2hn0ygk.png)
